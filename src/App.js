@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Signin from './Signin';
 import Profile from './Profile';
-import Aiforpic from './Components/Aiforpic.js';
+
 
 
 

@@ -32,11 +32,7 @@ function App() {
 
           </Route>
 
-          <Route path="/src/Aiforpic.js">
-            <Aiforpic />
-
-          </Route>
-          
+         
         </Switch>
       </BrowserRouter>
     </div>

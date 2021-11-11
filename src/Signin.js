@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Checkbox from '@material-ui/core/Checkbox';
 import TextField from '@material-ui/core/TextField';
 import Paper from '@material-ui/core/Paper';
-import './App.css';
 import Grid from '@material-ui/core/Grid';
+import Link from '@material-ui/core/Link';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
@@ -16,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     height: '100vh',
   },
   image: {
-    backgroundImage: 'url(https://source.unsplash.com/random)',
+    backgroundImage: 'url(https://files.fm/thumb_show.php?i=9ahewn5s3)',
     backgroundSize: 'cover',
   },
   paper: {
@@ -85,12 +87,7 @@ export default function Signin() {
             <LockOutlinedIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-           <h3> Sign in  Aidea</h3> 
-          
-            <h8>karn.yong@mecallapi.com / mecallapi<br/>
-          
-          ivy.cal@mecallapi.com / mecallapi </h8>
-            
+            ลงชื่อเข้าใช้
           </Typography>
           <form className={classes.form} noValidate onSubmit={handleSubmit}>
             <TextField
@@ -114,17 +111,31 @@ export default function Signin() {
               type="password"
               onChange={e => setPassword(e.target.value)}
             />
-           
+            <FormControlLabel
+                control={<Checkbox value="remember" color="primary" />}
+                label="จดจำฉันไว้"
+            />
             <Button
               type="submit"
               fullWidth
               variant="contained"
-              color="primary"
+              color="Primary"
               className={classes.submit}
             >
-              Sign In
+              ลงชื่อเข้าใช้
             </Button>
-            
+            <Grid container>
+                <Grid item xs>
+                  <Link href="#" variant="body2">
+                    ลืมรหัสผ่าน?
+                  </Link>
+                </Grid>
+                <Grid item>
+                  <Link href="#" variant="body2">
+                    {"ยังไม่มีบัญชีใช่หรือไม่? สมัครสมาชิกใหม่"}
+                  </Link>
+                </Grid>
+              </Grid>
           </form>
         </div>
       </Grid>

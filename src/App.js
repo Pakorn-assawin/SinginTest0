@@ -22,7 +22,7 @@ function App() {
       <BrowserRouter>
 
         <Switch>
-          <Route path="/profile">
+        <Route path="/src/Profile.js">
             <Profile />
            
           </Route>
@@ -31,11 +31,15 @@ function App() {
             <Profile />
 
           </Route>
-
-          <Route path="/src/Aiforpic.js">
+        <Route path="/src/Components/Aiforpic.js">
             <Aiforpic />
 
           </Route>
+
+          <Route path="/">
+            <Aiforpic />
+          </Route>
+
           
         </Switch>
       </BrowserRouter>

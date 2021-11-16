@@ -90,7 +90,7 @@ export default function Profile() {
               
               className="btn btn-outline-light btn-lg"
               role="button"
-              to="/src/Aiforpic.js"
+              to="/src/Components/Aiforpic.js"
              
               about
              
